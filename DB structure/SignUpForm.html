@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travista-Sign Up</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=number], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+ .header {
+    background-image: url("header.jpg");
+	background-color:  #087cc4;
+    padding: 20px;
+	max-width:1000px;
+    position: relative;
+    text-align: center;
+	margin:auto;
+ }
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1 style="color:#ffffff"><b>TRAVISTA</b></h1>
+  <h3 style="color:#ffffff">Dream. Explore. Discover<h3>
+</div>
+
+<form name="signup" action="/action_page.php" onsubmit="return validateForm()" style="border:1px solid #ccc">
+  <div class="container">
+    
+	<label><b>First name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
+	
+	<label><b>Last name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+	
+	<label><b>Age</b></label>
+    <input type="number" placeholder="Enter Age" name="age" required>
+	
+	<label><b>Sex</b></label><br>
+    <input type="radio" name="gender" value="male" checked> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    <label><b>Address</b></label>
+    <textarea id="address" name="address" placeholder="Enter Address" style="height:100px"></textarea>
+	
+	<label><b>Mobile number</b></label>
+    <input id="pno" type="text" placeholder="Enter Phone number" name="no" required>	
+	
+	<label><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+	
+    <label><b>Registration Category</b></label><br>
+    <input type="radio" name="category" value="Customer" checked> Customer
+    <input type="radio" name="category" value="agent"> Agent
+    <input type="radio" name="category" value="admin"> Admin
+	<br>
+	<br>
+  
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+	
+	<script>
+    function validateForm() {
+    var pno = document.forms["signup"]["no"].value;
+	if(pno.length!=10 || isNaN(pno)){
+	    alert("Enter Valid Mobile Number!");
+		return false;
+		}
+	var psw1 = document.forms["signup"]["psw"].value;	
+	var psw2 = document.forms["signup"]["psw-repeat"].value;
+	if(psw1!=psw2){
+	    alert("Retype password correctly!");
+		return false;
+        }
+	}
+    </script>	
+   
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" style="background-color:#087cc4" onclick="myFunction()">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

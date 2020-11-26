@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Travista-Customer-Beach Page</title>
+<meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+ .header {
+    background-image: url("header.jpg");
+	background-color:  #087cc4;
+    padding: 20px;
+	max-width:1000px;
+    position: relative;
+    text-align: center;
+	margin:auto;
+ }
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+ .header {
+    background-image: url("header.jpg");
+	background-color:  #087cc4;
+    padding: 20px;
+	max-width:1000px;
+    position: relative;
+    text-align: center;
+	margin:auto;
+ }
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+.button {
+    background-color: #4CAF50;
+    
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+   
+    font-size: 16px;
+    margin: 4px 2px;
+    //cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:#ffffff"><b>TRAVISTA</b></h1>
+  <h3 style="color:#ffffff">Dream. Explore. Discover<h3>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li><a href="CustomerHome.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+	  
+	  <li><a href="HillStationPage.html">Hill Stations</a></li>      
+      <li class="active"><a href="BeachPage.html">Beaches</a></li>
+	  <li><a href="#">Heritage Sites</a></li>
+	  <li><a href="#">Pilgrimage</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="FeedbackPage.html"><span class="glyphicon glyphicon-user"></span> Feedback</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="column">
+    <h2><center>Mumbai to Goa</center></h2>
+    <p><center>3 days 2 nights</p><p>Stay at the exquisite Club Mahindra</p><p>Transport by Car</p><p>Food included</p><p>Rs.5,999</p>
+  <button class="button">Book</button></center>
+  </div>
+   <div class="column">
+    <h2><center>Bangalore to Mangalore</center></h2>
+    <p><center>5 days 4 nights</p><p>Stay at the warm Sunshine Resort</p><p>Transport by Car</p><p>All sight seeing tickets paid for along with transport<p>Food not included</p><p>Rs.10,999</p>
+  <button class="button">Book</button></center>
+  </div>
+   <div class="column">
+    <h2><center>Chennai to Pondicherry</center></h2>
+    <p><center>2 days 1 nights</p><p>Stay at the exquisite Taj Residencies</p><p>Transport by Car</p><p>Food included</p><p>Rs.30,000</p>
+  <button class="button">Book</button></center>
+  </div>
+ 
+</div>
+
+</body>
+</html>

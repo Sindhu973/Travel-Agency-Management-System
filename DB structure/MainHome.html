@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Travista</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/*Justified alignment */
+div {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Style the header */
+.header {
+    background-color:  #087cc4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+//form style
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 5px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    //margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 15%;
+    //border-radius: 15%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    //padding-top: 16px;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn{
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 500px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:#ffffff"><b>TRAVISTA</b></h1>
+  <h3 style="color:#ffffff">Dream. Explore. Discover<h3>
+</div>
+
+<div class="row">
+  <div class="column">
+  <img src="home.jpg" width="400" height="420"/>
+  </div>
+  <div class="column">
+    <h2>About Us</h2>
+    <p>We are a company of trusted, passionate travel specialists who create customized luxury journeys to inspiring destinations. Our trips are completely based around your interests and schedule—they are one-of-a-kind experiences that are as unique as you are. The designed journeys are rugged and adventurous, urban and ultra-sophisticated, or the perfect blend of both. Whether you know exactly where you want to go or need some inspiration, we are here to guide you, and to create a journey that will surpass your expectations.<br><br>We are not only committed to providing you with an unforgettable and inspiring trip, we’re also committed to ensuring your happiness and comfort throughout. When you travel with us, you can feel confident knowing we have staff in every country who are available to accommodate your wishes and needs. From the moment you pick up the phone to after you return home, we ensure that your journey is seamless, authentic, and beyond what you had imagined.</p>
+  </div>
+  <div class="column">
+  <form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="login_avatar.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	
+	<label style="padding-bottom:20px"><b>Category</b></label><br>
+    <input type="radio" name="category" value="Customer" checked> Customer
+    <input type="radio" name="category" value="agent"> Agent
+    <input type="radio" name="category" value="admin"> Admin<br>
+     
+    <!<button type="button" class="cancelbtn"Cancel</button>	 
+    <!<span class="psw"<button type="submit" class="cancelbtn" style="background-color:#087cc4"Login</button</span>
+	<div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="cancelbtn" style="background-color:#087cc4">Login</button>
+    </div>
+    
+  </div>
+  <div class="container">
+    <input type="checkbox" checked="checked"> Remember me
+    <span class="psw"><a href="#">Forgot password?</a></span>	
+  </div>
+  <div class="container">
+    <a href="SignUpForm.html"><button type="button" style="background-color:#087cc4">Sign Up</button></a>
+  </div>
+</form>
+   </div>
+</div>
+
+</body>
+</html>
